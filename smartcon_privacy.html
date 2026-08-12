@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>개인정보처리방침 · 스마트콘</title>
+  <meta name="description" content="스마트콘(SmartCon) 개인정보처리방침 — 쿠폰 정보는 기기에만 저장되며 외부로 전송되지 않습니다." />
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet" />
+  <style>
+    :root {
+      --color-primary:       #FF3C42;
+      --color-primary-light: #FF6D72;
+      --color-primary-soft:  #FF9DA0;
+      --color-primary-pale:  #FFD8D9;
+      --color-white:         #FFFFFF;
+      --color-black:         #000000;
+      --color-gray-700:      #5B5A5A;
+      --color-gray-500:      #848383;
+      --color-gray-300:      #ADACAC;
+      --color-gray-100:      #DEDEDE;
+      --color-accent:        #405CFF;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Pretendard', 'Inter', -apple-system, sans-serif;
+      color: var(--color-gray-700);
+      background-color: var(--color-white);
+      line-height: 1.7;
+      word-break: keep-all;
+    }
+    .container { width: 100%; max-width: 760px; margin: 0 auto; padding: 0 1rem; }
+    @media (min-width: 640px)  { .container { padding: 0 1.5rem; } }
+
+    header {
+      background: linear-gradient(160deg, var(--color-primary) 0%, #E01F26 100%);
+      color: var(--color-white);
+      padding: 3rem 0 2.5rem;
+    }
+    header h1 { font-size: 1.9rem; font-weight: 700; color: var(--color-white); }
+    header .app { font-size: .95rem; opacity: .92; margin-bottom: .6rem; font-weight: 600; letter-spacing: .04em; }
+    header .meta { font-size: .875rem; opacity: .9; margin-top: 1rem; }
+
+    /* main·footer 는 .container 를 함께 쓴다. .container(클래스)가 main(요소)보다
+       우선하므로 `main { padding: ... }` 로 쓰면 좌우 패딩까지 덮어써 세로 여백이 사라진다.
+       선택자를 `main.container` 로 올리고 위아래만 지정한다. */
+    main.container { padding-top: 3rem; padding-bottom: 4rem; }
+
+    .lead {
+      background-color: var(--color-primary-pale);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .lead p { color: #8B2126; font-weight: 600; font-size: 1.02rem; }
+    .lead p + p { margin-top: .5rem; font-weight: 400; color: #A34248; font-size: .95rem; }
+
+    section { margin-bottom: 2.5rem; }
+    h2 {
+      font-size: 1.2rem; font-weight: 700; color: var(--color-black);
+      padding-bottom: .6rem; margin-bottom: 1rem;
+      border-bottom: 2px solid var(--color-gray-100);
+    }
+    h3 { font-size: 1rem; font-weight: 600; color: var(--color-black); margin: 1.4rem 0 .5rem; }
+    p { margin-bottom: .8rem; }
+    ul { margin: 0 0 .9rem 1.1rem; }
+    li { margin-bottom: .4rem; }
+
+    table { width: 100%; border-collapse: collapse; margin: .8rem 0 1rem; font-size: .93rem; }
+    th, td { border: 1px solid var(--color-gray-100); padding: .65rem .8rem; text-align: left; vertical-align: top; }
+    th { background-color: #FAFAFA; font-weight: 600; color: var(--color-black); }
+
+    .badge-primary {
+      background-color: var(--color-primary-pale); color: var(--color-primary);
+      border-radius: 999px; padding: .15rem .6rem; font-size: .75rem; font-weight: 600;
+      white-space: nowrap;
+    }
+    .badge-gray {
+      background-color: var(--color-gray-100); color: var(--color-gray-700);
+      border-radius: 999px; padding: .15rem .6rem; font-size: .75rem; font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .note {
+      background-color: #FAFAFA; border-left: 3px solid var(--color-gray-300);
+      border-radius: 0 8px 8px 0; padding: .9rem 1.1rem; margin: 1rem 0;
+      font-size: .93rem; color: var(--color-gray-700);
+    }
+
+    a { color: var(--color-accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer { border-top: 1px solid var(--color-gray-100); }
+    footer.container { padding-top: 2rem; padding-bottom: 3rem; }
+    footer { font-size: .875rem; color: var(--color-gray-500); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="app">스마트콘 SmartCon</div>
+    <h1>개인정보처리방침</h1>
+    <div class="meta">시행일 · 2026년 8월 12일</div>
+  </div>
+</header>
+
+<main class="container">
+
+  <div class="lead">
+    <p>스마트콘은 이용자의 개인정보를 수집하지 않습니다.</p>
+    <p>등록한 쿠폰 정보와 이미지는 <strong>이용자의 기기 안에만</strong> 저장되며, 개발자를 포함한 누구에게도 전송되지 않습니다. 회원가입이나 로그인도 필요하지 않습니다.</p>
+  </div>
+
+  <section>
+    <h2>1. 수집하는 개인정보</h2>
+    <p><strong>스마트콘은 개인정보를 수집·저장·전송하지 않습니다.</strong> 별도의 계정이나 로그인이 없으며, 이름·연락처·이메일·기기 식별자 등 이용자를 식별할 수 있는 정보를 요구하지 않습니다.</p>
+    <p>이용 행태를 분석하는 도구(애널리틱스)를 사용하지 않으며, 광고를 게재하지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2>2. 기기에 저장되는 정보</h2>
+    <p>아래 정보는 앱 기능을 위해 <strong>이용자의 기기 내부 저장소에만</strong> 보관됩니다. 외부 서버로 전송되지 않으며 개발자가 열람할 수 없습니다.</p>
+
+    <table>
+      <thead>
+        <tr><th style="width:32%">항목</th><th>내용</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>쿠폰 정보</td>
+          <td>브랜드, 상품명, 바코드 번호, 유효기간, 금액, 사용 여부</td>
+        </tr>
+        <tr>
+          <td>쿠폰 이미지</td>
+          <td>이용자가 선택한 사진첩 이미지의 사본</td>
+        </tr>
+        <tr>
+          <td>앱 설정</td>
+          <td>최초 실행 시각, 안내 화면 표시 여부 등</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note">
+      쿠폰 이미지에는 보낸 사람 이름이나 메시지 같은 개인적인 내용이 포함될 수 있습니다. 이 이미지는 <strong>기기 밖으로 나가지 않습니다.</strong> 바코드·문자 인식도 기기 안에서만 처리되며(온디바이스), 인식을 위해 이미지를 서버로 보내지 않습니다.
+    </div>
+
+    <h3>보관 기간과 파기</h3>
+    <ul>
+      <li>이용자가 앱에서 쿠폰을 삭제하면 해당 정보와 이미지 사본이 즉시 삭제됩니다.</li>
+      <li>앱을 삭제하면 저장된 모든 정보가 기기에서 함께 삭제됩니다.</li>
+      <li>별도의 백업 서버가 없으므로, <strong>앱을 삭제하면 데이터를 복구할 수 없습니다.</strong></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. 앱 접근 권한</h2>
+    <p>서비스 제공에 필요한 최소한의 권한만 요청합니다. <strong>선택 권한은 거부해도 앱을 이용할 수 있으며</strong>, 해당 기능만 제한됩니다.</p>
+
+    <table>
+      <thead>
+        <tr><th style="width:26%">권한</th><th style="width:16%">구분</th><th>이용 목적</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>사진</td>
+          <td><span class="badge-primary">선택</span></td>
+          <td>사진첩에 저장된 쿠폰 이미지를 불러와 바코드와 유효기간을 자동으로 인식합니다. 거부 시 쿠폰을 직접 입력해 등록할 수 있습니다.</td>
+        </tr>
+        <tr>
+          <td>알림</td>
+          <td><span class="badge-primary">선택</span></td>
+          <td>쿠폰 만료 전에 알려드립니다. 거부 시 알림이 오지 않으며 다른 기능은 그대로 이용할 수 있습니다.</td>
+        </tr>
+        <tr>
+          <td>캘린더</td>
+          <td><span class="badge-primary">선택</span></td>
+          <td>쿠폰 만료일을 기기 캘린더에 일정으로 등록합니다. 거부 시 이 기능만 사용할 수 없습니다.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note">
+      권한은 기기의 <strong>설정 &gt; 애플리케이션 &gt; 스마트콘 &gt; 권한</strong>에서 언제든지 다시 설정할 수 있습니다.
+    </div>
+  </section>
+
+  <section>
+    <h2>4. 외부 서비스</h2>
+    <p>앱은 아래 서비스를 이용합니다. <strong>이용자의 쿠폰 정보는 어떤 경우에도 전송되지 않습니다.</strong></p>
+
+    <h3>Google Firebase (Google LLC)</h3>
+    <p>이벤트 목록을 내려받고 앱 업데이트 안내를 확인하는 용도로 사용합니다. 앱이 서버에서 정보를 <strong>읽기만 하며 쓰지 않습니다.</strong></p>
+    <ul>
+      <li>이 통신 과정에서 통신에 필요한 <strong>IP 주소</strong>가 Google에 전달됩니다. 이는 인터넷 통신의 기술적 특성에 따른 것이며, 개발자는 이를 수집하거나 이용자와 연결하지 않습니다.</li>
+      <li>비정상적인 접근을 차단하기 위해 Firebase App Check를 사용합니다. 이 과정에서 <strong>앱 무결성 확인 토큰</strong>이 Google에 전달되며, 이 토큰으로는 개인을 식별할 수 없습니다.</li>
+    </ul>
+    <p>Google의 개인정보 처리에 관한 사항은 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>을 참고하시기 바랍니다.</p>
+
+    <h3>YouTube</h3>
+    <p>설정 화면의 <strong>동영상 매뉴얼</strong>을 누르면 YouTube로 이동합니다. 이동 이후에는 YouTube의 개인정보처리방침이 적용됩니다.</p>
+
+    <h3>앱 마켓 결제</h3>
+    <p>유료 기능을 구매하는 경우 결제는 <strong>Apple App Store 또는 Google Play를 통해 처리</strong>됩니다. 개발자는 카드번호·계좌 등 결제 수단 정보를 전달받거나 저장하지 않으며, 구매 여부만 각 마켓을 통해 확인합니다.</p>
+  </section>
+
+  <section>
+    <h2>5. 제3자 제공 및 처리 위탁</h2>
+    <p>스마트콘은 개인정보를 수집하지 않으므로 <strong>제3자에게 제공하거나 처리를 위탁하는 개인정보가 없습니다.</strong></p>
+  </section>
+
+  <section>
+    <h2>6. 이용자의 권리</h2>
+    <p>기기에 저장된 정보는 전적으로 이용자의 통제 아래 있습니다.</p>
+    <ul>
+      <li><strong>열람·수정</strong> — 앱에서 언제든지 등록한 쿠폰을 확인하고 수정할 수 있습니다.</li>
+      <li><strong>삭제</strong> — 개별 쿠폰을 삭제하거나, 설정에서 사용·만료된 쿠폰을 일괄 정리할 수 있습니다.</li>
+      <li><strong>전체 삭제</strong> — 앱을 삭제하면 저장된 모든 정보가 기기에서 제거됩니다.</li>
+    </ul>
+    <p>개발자가 보유한 이용자 정보가 없으므로 별도의 열람·정정·삭제 요청 절차를 두지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2>7. 안전성 확보 조치</h2>
+    <ul>
+      <li>쿠폰 정보와 이미지는 <strong>앱 전용 저장 영역</strong>에 보관되어 다른 앱이 접근할 수 없습니다.</li>
+      <li>이미지 인식(바코드·문자)은 <strong>기기 안에서만</strong> 수행되며 외부로 전송되지 않습니다.</li>
+      <li>외부 서버와의 통신은 <strong>암호화(HTTPS)</strong>된 경로로만 이루어집니다.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>8. 만 14세 미만 아동</h2>
+    <p>스마트콘은 개인정보를 수집하지 않으며, 만 14세 미만 아동을 대상으로 하지 않습니다. 연령 정보를 포함한 어떠한 개인정보도 요구하지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2>9. 개인정보 보호책임자 및 문의</h2>
+    <table>
+      <tbody>
+        <tr><th style="width:30%">개인정보 보호책임자</th><td>이상훈</td></tr>
+        <tr><th>문의 이메일</th><td><a href="mailto:shuni76@gmail.com">shuni76@gmail.com</a></td></tr>
+      </tbody>
+    </table>
+    <p>개인정보 처리와 관련한 문의·불만은 위 이메일로 접수해 주시기 바랍니다.</p>
+
+    <h3>권익침해 구제</h3>
+    <p>개인정보 침해로 인한 상담·신고가 필요하신 경우 아래 기관에 문의하실 수 있습니다.</p>
+    <ul>
+      <li>개인정보침해신고센터 — <a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">privacy.kisa.or.kr</a> / 국번 없이 118</li>
+      <li>개인정보 분쟁조정위원회 — <a href="https://www.kopico.go.kr" target="_blank" rel="noopener">kopico.go.kr</a> / 1833-6972</li>
+      <li>대검찰청 사이버수사과 — <a href="https://www.spo.go.kr" target="_blank" rel="noopener">spo.go.kr</a> / 1301</li>
+      <li>경찰청 사이버수사국 — <a href="https://ecrm.police.go.kr" target="_blank" rel="noopener">ecrm.police.go.kr</a> / 182</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>10. 방침의 변경</h2>
+    <p>이 개인정보처리방침이 변경되는 경우, 변경 사항을 이 페이지에 게시하고 시행일을 함께 안내합니다. 이용자에게 중대한 영향을 미치는 변경은 앱 내 공지 또는 업데이트 안내를 통해 알려드립니다.</p>
+  </section>
+
+</main>
+
+<footer class="container">
+  스마트콘 SmartCon · 개인정보처리방침<br />
+  최종 수정일 2026년 8월 12일
+</footer>
+
+</body>
+</html>
